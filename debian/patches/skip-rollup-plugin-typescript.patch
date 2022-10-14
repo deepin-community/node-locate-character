@@ -1,0 +1,24 @@
+Some options of plugin no longer work, use command line instead
+
+--- a/rollup.config.js
++++ b/rollup.config.js
+@@ -1,15 +1,7 @@
+-import typescript from 'rollup-plugin-typescript';
+-
+ export default {
+-	entry: 'src/index.ts',
+-	moduleName: 'locateCharacter',
+-	plugins: [
+-		typescript({
+-			typescript: require('typescript')
+-		})
+-	],
+-	targets: [
+-		{ dest: 'dist/locate-character.es.js', format: 'es' },
+-		{ dest: 'dist/locate-character.umd.js', format: 'umd' }
++	input: 'src/index.js',
++	output: [
++		{ name: 'locateCharacter', file: 'dist/locate-character.es.js', format: 'es' },
++		{ name: 'locateCharacter', file: 'dist/locate-character.umd.js', format: 'umd' }
+ 	]
+ };

@@ -1,0 +1,16 @@
+Description: fix rollup config
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: https://github.com/Rich-Harris/locate-character/issues/7
+Last-Update: 2020-10-04
+
+--- a/rollup.config.js
++++ b/rollup.config.js
+@@ -1,5 +1,7 @@
++const typescript = require("rollup-plugin-typescript");
+ export default {
+-	input: 'src/index.js',
++    plugins: [typescript()],
++	input: 'src/index.ts',
+ 	output: [
+ 		{ name: 'locateCharacter', file: 'dist/locate-character.es.js', format: 'es' },
+ 		{ name: 'locateCharacter', file: 'dist/locate-character.umd.js', format: 'umd' }

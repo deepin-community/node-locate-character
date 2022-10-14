@@ -1,0 +1,111 @@
+node-locate-character (2.0.5+repack-3) unstable; urgency=medium
+
+  * Bump std-vers to 4.6.0.
+  * Clarify how the upstream tarball was repacked.
+  * Added a comment in d/copyright to point to README.source.
+  * Rename and forward the patch fixing the rollup config.
+
+ -- Julien Puydt <jpuydt@debian.org>  Fri, 20 Aug 2021 00:09:33 +0200
+
+node-locate-character (2.0.5+repack-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix upstream rollup configuration
+  * Use upstream build: this fixes typescript files which were wrong in
+    2.0.5+repack-1
+  * Use dh-sequence-nodejs
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 04 Oct 2020 11:06:12 +0200
+
+node-locate-character (2.0.5+repack-1) unstable; urgency=medium
+
+  * Team upload
+  * Repack using source from
+    https://gitlab.com/Rich-Harris/locate-character/-/commits/master
+    (Closes: #971519), and back to unstable
+  * New upstream version 2.0.5+repack (Closes: #932958)
+  * Restore build and test
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Oct 2020 11:25:59 +0200
+
+node-locate-character (2.0.5-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Temporarily use npm registry due to missing tags in upstream repo
+    + disable test
+    + import upstream built files (this generates real lintian errors)
+  * New upstream version 2.0.5: provides typescript files needed by rollup 2
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 01 Oct 2020 08:40:10 +0200
+
+node-locate-character (2.0.1-6) unstable; urgency=medium
+
+  * Team Upload.
+
+  [ Julien Puydt ]
+  * Update the homepage.
+
+  [ Nilesh ]
+  * Add d/upstream/metadata
+  * Fix install paths
+  * Switch to pkg-js-tools
+  * Update patch to fix rollup.config.js (Closes: #942259)
+
+ -- Nilesh <npatra974@gmail.com>  Sun, 20 Oct 2019 22:26:41 +0530
+
+node-locate-character (2.0.1-5) unstable; urgency=medium
+
+  * Ship various versions of the module (thanks Pirate Praveen).
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 27 Jul 2019 09:13:40 +0200
+
+node-locate-character (2.0.1-4) unstable; urgency=medium
+
+  [ Julien Puydt ]
+  * Fix Vcs-* fields
+  * Bump dh compat to 12 and drop d/compat.
+  * Bump std-ver to 4.4.0.
+  * Run upstream test suite in autopkgtest.
+  * Mark the package Multi-Arch: foreign following hinter.
+
+  [ Pirate Praveen ]
+  * Generate ES modules with rollup (Closes: #932958)
+
+ -- Julien Puydt <jpuydt@debian.org>  Thu, 25 Jul 2019 20:42:55 +0200
+
+node-locate-character (2.0.1-3) unstable; urgency=medium
+
+  * Refresh packaging:
+    - Point d/watch to github.
+    - Bump dh compat to 11.
+    - Bump std-ver to 4.1.4.
+    - Move from section web to section javascript.
+    - Move repository to salsa.
+    - Use my debian.org mail address.
+
+ -- Julien Puydt <jpuydt@debian.org>  Wed, 02 May 2018 17:29:08 +0200
+
+node-locate-character (2.0.1-2) unstable; urgency=medium
+
+  * Rewrite d/watch to match changes on gitlab (and declare version 4).
+  * Bump dh compat to 10.
+  * Bump std-ver to 4.1.0.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 03 Sep 2017 16:02:05 +0200
+
+node-locate-character (2.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #867054)
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Mon, 03 Jul 2017 19:47:25 +0200

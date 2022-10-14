@@ -1,0 +1,7 @@
+This source had to be repacked for the following reasons:
+- upstream has a repository with tags on github, but pretty outdated ;
+- upstream has a repository without tags on gitlab, but more recent ;
+- upstream published the latest release on npmjs.com ;
+- no answer on https://github.com/Rich-Harris/locate-character/issues/6.
+
+So the repack was done by Xavier Guimard for Debian's 2.0.5+repack-1.

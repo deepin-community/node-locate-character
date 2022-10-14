@@ -1,0 +1,3 @@
+#tsc -m commonjs src/index.ts
+rollup -c
+tsc

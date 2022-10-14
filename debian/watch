@@ -1,0 +1,5 @@
+version=4
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,ctype=nodejs,pgpmode=none,dversionmangle=auto" \
+ https://registry.npmjs.org/locate-character https://registry.npmjs.org/locate-character/-/locate-character-([\d\.]+)@ARCHIVE_EXT@
