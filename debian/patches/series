@@ -1,2 +1,4 @@
 skip-rollup-plugin-typescript.patch
 fix-rollup-config.diff
+update-rollup-plugin-typescript.patch
+fix-for-rollup-3.patch

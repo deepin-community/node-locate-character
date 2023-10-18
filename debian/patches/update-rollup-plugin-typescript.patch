@@ -1,0 +1,13 @@
+Description: update to @rollup/plugin-typescript
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-12-14
+
+--- a/rollup.config.js
++++ b/rollup.config.js
+@@ -1,4 +1,4 @@
+-const typescript = require("rollup-plugin-typescript");
++const typescript = require("@rollup/plugin-typescript");
+ export default {
+     plugins: [typescript()],
+ 	input: 'src/index.ts',
